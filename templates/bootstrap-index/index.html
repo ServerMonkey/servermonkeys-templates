@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <!--<meta http-equiv="refresh" content="1">-->
+    <meta http-equiv="content-type" content="text/html" charset="ISO-8859-1"/>
+    <meta name="viewport" content="width=device-width">
+    <title>[TITLE]</title>
+
+	<!--<link href="css/bootstrap/bootstrap.css" rel="stylesheet">-->
+    <link href="css/bootstrap/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <!--<script src="css/bootstrap/jquery-3.5.1.js"></script>-->
+    <script src="css/bootstrap/jquery-3.5.1.min.js"></script>
+    <script src="css/bootstrap/jquery.dataTables.min.js"></script>
+    <script src="css/bootstrap/dataTables.bootstrap4.min.js"></script>
+
+    <link rel="stylesheet"
+          href="css/bootstrap.css" type="text/css" media="all">
+    <link rel="stylesheet"
+          href="css/style.css" type="text/css" media="all">
+    <link rel="stylesheet"
+          href="css/custom.css" type="text/css" media="all">
+</head>
+
+<body>
+
+<div class="container">
+
+    <table style="width:100%">
+        <tr>
+            <th><h2>[TITLE]</h2></th>
+        </tr>
+    </table>
+    <br>
+
+    <table id="thissite" class="table table-striped table-bordered">
+        <thead>
+        <tr>
+            <th>[ROW1]</th>
+            <th>[ROW2]</th>
+            <th>[ROW3]</th>
+        </tr>
+        </thead>
+        [DATA]
+    </table>
+    <br>
+
+</div>
+
+<SCRIPT>
+$(document).ready(function() {
+$('#thissite').DataTable({
+"bPaginate": false,
+"bFilter": true,
+"bInfo": false,
+language: {
+  'search' : 'Filter:'
+}
+});
+} );
+</SCRIPT>
+
+</body>
+</html>

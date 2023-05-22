@@ -1,0 +1,17 @@
+# This is a list of installation arguments used by Windows applications.
+# If you want a specific software to be added here,
+# please add a Pull request or open an Issue.
+# Arguments must be completely silent / none-interactive, come with the default
+# settings and do not automatically restart the OS.
+# Commas are not allowed. If commas are part of the argument please contact me.
+
+acdsee==/S /v" /qn ALLUSERS=1 LICENSE_MODEL=TRIAL
+acrobat-reader==/sAll /rps
+audacity==/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-
+bittorrent==/S
+core-ftp-le==/S
+firstdefense-isr-server==/S /v" /qn
+foobar2000==/S
+foxit-pdf-reader==/d
+mozilla-firefox==-ms -ma
+postgresql==--unattendedmodeui minimal --mode unattended

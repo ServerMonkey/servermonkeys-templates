@@ -1,0 +1,24 @@
+#!/bin/sh
+#info: helloworld
+
+OPTIND=1 # Reset in case getopts has been set
+VERBOSE=0
+while getopts "vfh:" OPT; do
+    case "$OPT" in
+    v)
+        VERBOSE=1
+        ;;
+    f)
+        OUT_FILE=$OPTARG
+        ;;
+    h | *)
+        man helloworld.1 || ronn -r <README.md | man -l -
+        ;;
+    esac
+done
+shift $((OPTIND - 1))
+[ "${1:-}" = "--" ] && shift
+
+echo "verbose=$VERBOSE, output_file='$OUT_FILE', Leftovers: $*"
+
+echo "helloworld"

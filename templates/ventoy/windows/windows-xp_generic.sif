@@ -1,0 +1,50 @@
+;*************************************************
+;Windows XP Answer File Generator
+;Created using Windows AFG found at:
+;http://www.windowsafg.com
+;
+;Installation Notes
+;Location: 
+;Notes: generic
+- swedish timezone
+- ansible password
+- no updates
+;**************************************************-->
+
+[Data]
+Autopartition=1
+MsDosInitiated=0
+UnattendedInstall=Yes
+AutomaticUpdates=No
+
+[Unattended]
+UnattendMode=FullUnattended
+OemPreinstall=No
+OemSkipEula=Yes
+FileSystem=NTFS
+WaitForReboot=No
+NoWaitAfterTextMode=1
+NoWaitAfterGUIMode=1
+DriverSigningPolicy=Ignore
+NonDriverSigningPolicy=Ignore
+Repartition=Yes
+UnattendSwitch=Yes
+
+[GuiUnattended]
+AdminPassword=ansible
+TimeZone=110
+OEMSkipRegional=1
+OemSkipWelcome=1
+
+[UserData]
+ProductKey=NG4HW-VH26C-733KW-K6F98-J8CK4
+ComputerName=generic
+FullName=generic
+OrgName=generic
+
+[RegionalSettings]
+LanguageGroup=1
+Language=409
+
+[Networking]
+InstallDefaultComponents=Yes
