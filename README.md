@@ -9,13 +9,13 @@ A collection of my personal templates, programming and automation related.
 * **bootstrap-index** : HTML/CSS template that displays a list.
 * **debian** : Genric Debian package make template.
 * **ventoy** : ventoy.json unattended installer templates. Includes Debian
-  preseeds and Windows Answer Files.
+  preseeds and Windows Answer Files. See the README.md inside the ventoy folder for instructions.
 * **packages_args.txt** : A list of silent installer arguments used by
   Windows applications.
 
-## INSTALLATION
+## USAGE
 
-Copy each folder to wherever you want:
+Copy each template folder to wherever you want to start your project:
 
     $ cp -r /usr/share/servermonkeys-templates/templates/<TEMPLATE_FOLDER_NAME> <MY_PROJECT>
 
