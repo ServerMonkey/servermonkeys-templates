@@ -61,8 +61,9 @@ zip -q -r "$RELEASES/$NAME-$VERSION.source.zip" ./* \
 wait
 
 # replace latest version
-cp "$PATH_BASE.deb" "$RELEASES/$NAME-LATEST.deb"
-cp "$PATH_BASE.source.zip" "$RELEASES/$NAME-LATEST-source.zip"
+cd "$RELEASES" || exit 1
+ln -sf "$NAME-$VERSION.deb" "$NAME-LATEST.deb"
+cd "$APP_DIR" || exit 1
 
 # clean up
 echo "Clean up"
