@@ -7,18 +7,35 @@
                 "/ventoy/debian/generic_laptop.cfg",
                 "/ventoy/debian/generic_nvme.cfg",
                 "/ventoy/debian/generic_nvme_laptop.cfg",
-                "/ventoy/debian/generic_sata.cfg",
-                "/ventoy/debian/generic_sata_laptop.cfg"
+                "/ventoy/debian/generic_sda.cfg",
+                "/ventoy/debian/generic_sda_laptop.cfg"
             ]
         },
         {
-            "image": "/Windows-7-Pro_sp1.7601.24214.180801.x64.iso",
+            "image": "/debian-12-dvd1_12.0.0.x64.iso",
+            "template":[
+                "/ventoy/debian/generic.cfg",
+                "/ventoy/debian/generic_laptop.cfg",
+                "/ventoy/debian/generic_nvme.cfg",
+                "/ventoy/debian/generic_nvme_laptop.cfg",
+                "/ventoy/debian/generic_sda.cfg",
+                "/ventoy/debian/generic_sda_laptop.cfg"
+            ]
+        },
+        {
+            "image": "/windows-7-ultimate_sp1.7601.24214.180801.x64.iso",
             "template":[
                 "/ventoy/windows/windows-7_generic.xml"
             ]
         },
         {
-            "image": "/Windows-10-32bit_19045.2006.x32.iso",
+            "image": "/windows-10_22H2.23.02.x64.iso",
+            "template":[
+                "/ventoy/windows/windows-10-11_generic.xml"
+            ]
+        },
+		{
+            "image": "/windows-11_22H2.22.10.x64.iso",
             "template":[
                 "/ventoy/windows/windows-10-11_generic.xml"
             ]
