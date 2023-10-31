@@ -63,6 +63,7 @@ wait
 # replace latest version
 cd "$RELEASES" || exit 1
 ln -sf "$NAME-$VERSION.deb" "$NAME-LATEST.deb"
+ln -sf "$NAME-$VERSION.source.zip" "$NAME-LATEST.source.zip"
 cd "$APP_DIR" || exit 1
 
 # clean up
